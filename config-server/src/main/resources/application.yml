@@ -1,0 +1,19 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8889/eureka/
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: http://210.13.199.115:8899/chenhb62/firsttest.git
+          search-paths: respo
+          username: chenhb62
+          password: bin941012
+      label: master
+server:
+  port: 8888
